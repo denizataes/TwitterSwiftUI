@@ -39,6 +39,7 @@
 		A057B68129295DCF008CB533 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A057B68029295DCF008CB533 /* AuthViewModel.swift */; };
 		A0FCC4E8292A6DCA00105FD9 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCC4E7292A6DCA00105FD9 /* ProfilePhotoSelectorView.swift */; };
 		A0FCC4EB292A71A200105FD9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCC4EA292A71A200105FD9 /* ImagePicker.swift */; };
+		A0FCC4ED292AB40500105FD9 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCC4EC292AB40500105FD9 /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		A057B68029295DCF008CB533 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		A0FCC4E7292A6DCA00105FD9 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		A0FCC4EA292A71A200105FD9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A0FCC4EC292AB40500105FD9 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		A057B62E2926C3DF008CB533 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A0FCC4EC292AB40500105FD9 /* ImageUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				A0FCC4EB292A71A200105FD9 /* ImagePicker.swift in Sources */,
 				A057B6222926C329008CB533 /* ContentView.swift in Sources */,
 				A057B63A2926C530008CB533 /* TweetRowView.swift in Sources */,
+				A0FCC4ED292AB40500105FD9 /* ImageUploader.swift in Sources */,
 				A057B67129291582008CB533 /* CustomInputField.swift in Sources */,
 				A057B64D2926D380008CB533 /* TweetFilterViewModel.swift in Sources */,
 				A057B6372926C469008CB533 /* FeedView.swift in Sources */,
