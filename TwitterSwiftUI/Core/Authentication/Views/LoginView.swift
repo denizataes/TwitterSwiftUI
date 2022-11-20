@@ -19,7 +19,7 @@ struct LoginView: View {
                 
                 CustomInputField(imageName: "envelope", placeHolderText: "Email", text: $email)
                 
-                CustomInputField(imageName: "lock", placeHolderText: "Password", text: $password)
+                CustomInputField(imageName: "lock", placeHolderText: "Password", text: $password, isSecureField: true)
                 
                 
                 
