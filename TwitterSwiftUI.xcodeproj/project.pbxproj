@@ -40,6 +40,8 @@
 		A0FCC4E8292A6DCA00105FD9 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCC4E7292A6DCA00105FD9 /* ProfilePhotoSelectorView.swift */; };
 		A0FCC4EB292A71A200105FD9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCC4EA292A71A200105FD9 /* ImagePicker.swift */; };
 		A0FCC4ED292AB40500105FD9 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCC4EC292AB40500105FD9 /* ImageUploader.swift */; };
+		A0FCC4F1292BF85000105FD9 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCC4F0292BF85000105FD9 /* UserService.swift */; };
+		A0FCC4F3292BF9E600105FD9 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCC4F2292BF9E600105FD9 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 		A0FCC4E7292A6DCA00105FD9 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		A0FCC4EA292A71A200105FD9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A0FCC4EC292AB40500105FD9 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		A0FCC4F0292BF85000105FD9 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		A0FCC4F2292BF9E600105FD9 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A0FCC4EC292AB40500105FD9 /* ImageUploader.swift */,
+				A0FCC4F0292BF85000105FD9 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 		A057B62F2926C3E1008CB533 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0FCC4F2292BF9E600105FD9 /* Users.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -472,6 +478,7 @@
 			files = (
 				A057B6472926CBBE008CB533 /* MessagesView.swift in Sources */,
 				A057B64B2926CC82008CB533 /* ProfileView.swift in Sources */,
+				A0FCC4F1292BF85000105FD9 /* UserService.swift in Sources */,
 				A0FCC4EB292A71A200105FD9 /* ImagePicker.swift in Sources */,
 				A057B6222926C329008CB533 /* ContentView.swift in Sources */,
 				A057B63A2926C530008CB533 /* TweetRowView.swift in Sources */,
@@ -489,6 +496,7 @@
 				A057B65B2927E26F008CB533 /* SideMenuViewModel.swift in Sources */,
 				A057B66B29290E86008CB533 /* LoginView.swift in Sources */,
 				A057B66D29290EB9008CB533 /* RegistrationView.swift in Sources */,
+				A0FCC4F3292BF9E600105FD9 /* Users.swift in Sources */,
 				A057B6522927DF42008CB533 /* UserRowView.swift in Sources */,
 				A057B68129295DCF008CB533 /* AuthViewModel.swift in Sources */,
 				A057B66F29290FDD008CB533 /* RoundedShape.swift in Sources */,
