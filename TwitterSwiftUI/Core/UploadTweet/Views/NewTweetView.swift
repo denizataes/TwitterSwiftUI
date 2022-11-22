@@ -6,13 +6,16 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct NewTweetView: View {
     @State private var caption = ""
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var authViewModel: AuthViewModel
+    @ObservedObject var viewModel = UploadTweetViewModel()
     var body: some View {
         
-        VStack(){
+        VStack{
             HStack{
                 Button {
                     presentationMode.wrappedValue.dismiss()
@@ -24,13 +27,12 @@ struct NewTweetView: View {
                 }
                 Spacer()
                 Button {
-                    print("Tweet")
-                    
+                    viewModel.uploadTweet(withCaption: caption)
                 } label: {
                     Text("Tweet")
                         .bold()
                         .padding(.horizontal)
-                        .padding(.vertical,8)
+                        .padding(.vertical, 8)
                         .background(Color(.systemBlue))
                         .foregroundColor(.white)
                         .clipShape(Capsule())
@@ -43,13 +45,27 @@ struct NewTweetView: View {
             
             
             HStack(alignment: .top){
-                Circle()
-                    .frame(width: 64, height: 64)
+                if let user = authViewModel.currentUser {
+                    KFImage(URL(string: user.profileImageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .clipShape(Circle())
+                        .frame(width: 64, height: 64)
+                    
+                    TextArea(placeholder: "What's happening?", text: $caption)
+                        .multilineTextAlignment(.leading)
+
+                }
                 
-                TextArea("What's happening?", text: $caption)
+                
                 
             }
             .padding()
+        }
+        .onReceive(viewModel.$diduploadTweet) { success in
+            if success {
+                presentationMode.wrappedValue.dismiss()
+            }
         }
     }
 }
