@@ -9,7 +9,7 @@ import FirebaseFirestoreSwift
 import Firebase
 
 
-struct Tweet: Identifiable, Decodable{
+struct Tweet: Identifiable, Decodable {
     @DocumentID var id: String?
     let caption: String
     let timestamp: Timestamp
@@ -17,5 +17,6 @@ struct Tweet: Identifiable, Decodable{
     var likes: Int
     
     var user: Users?
+    var didLike: Bool? = false
     
 }
